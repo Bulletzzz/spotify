@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscreva-se - Spotify</title>
+    <link rel="icon" href="imagens/favicon.png" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+
+    <style>
+      body {
+        background-color: #121212;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 80px;
+      }
+
+      .container-inscricao {
+        max-width: 400px;
+        margin: auto;
+        padding: 40px;
+      }
+
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .form-control {
+        background-color: #121212;
+        border: 1px solid #ccc;
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      .form-control::placeholder {
+        color: #bbb;
+      }
+
+      .btn-avancar {
+        background-color: #1db954;
+        color: white;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 10px 0;
+        margin-top: 10px;
+      }
+
+      .btn-avancar:hover {
+        opacity: 0.9;
+      }
+
+      .link-verde {
+        color: #1db954;
+        font-size: 14px;
+      }
+
+      .separator {
+        text-align: center;
+        color: #ccc;
+        margin: 30px 0 20px;
+        position: relative;
+      }
+
+      .separator::before,
+      .separator::after {
+        content: "";
+        display: inline-block;
+        width: 40%;
+        height: 1px;
+        background: #ccc;
+        vertical-align: middle;
+        margin: 0 10px;
+      }
+
+      .social-btn {
+        background-color: #000;
+        border: 1px solid #ccc;
+        color: white;
+        border-radius: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .social-btn img {
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      a {
+        color: #9bf0e1;
+      }
+
+      .footer-note {
+        font-size: 12px;
+        color: #aaa;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-inscricao">
+      <img src="imagens/spotify.svg" width="50" class="mb-4" />
+      <h1>Se inscreva e<br />comece a curtir</h1>
+
+      <form>
+        <div class="form-group text-left">
+          <label for="email">Endereço de e-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="nome@dominio.com" required />
+        </div>
+        <p class="text-left">
+          <a href="#" class="link-verde">Usar número de telefone.</a>
+        </p>
+
+        <button type="submit" class="btn btn-block btn-avancar">Avançar</button>
+      </form>
+
+      <div class="separator">ou</div>
+
+      <!-- Botões Sociais -->
+      <button class="btn btn-block social-btn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" />
+        Inscrever-se com o Google
+      </button>
+      <button class="btn btn-block social-btn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" />
+        Inscrever-se com o Facebook
+      </button>
+      <button class="btn btn-block social-btn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" />
+        Criar conta com a Apple
+      </button>
+
+      <p class="mt-4">
+        Já tem uma conta? <a href="entrar.html">Faça login aqui.</a>
+      </p>
+
+      <p class="footer-note">
+        Este site é protegido por reCAPTCHA e o Google<br />
+        <a href="#">Privacy Policy</a> e <a href="#">Terms of Service</a> se aplicam.
+      </p>
+    </div>
+  </body>
+</html>
